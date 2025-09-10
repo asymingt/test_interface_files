@@ -1,4 +1,3 @@
-
 # Copyright 2025 Open Source Robotics Foundation, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,20 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Imports
-
-load("@ros//:defs.bzl", "ros_data")
-
 package(default_visibility = ["//visibility:public"])
 
-# Exports
-
-exports_files(
-    glob([
-        "idl/*.idl",
-        "msg/*.msg",
-        "srv/*.srv",
-        "action/*.action"
-    ]),
-)
-
+exports_files(glob(["*.idl"]))
