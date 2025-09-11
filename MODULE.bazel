@@ -19,7 +19,3 @@ module(
     version = "0.14.1",
     compatibility_level = 0,
 )
-
-# Dependencies
-
-bazel_dep(name = "ros", version = "0.0.0")
